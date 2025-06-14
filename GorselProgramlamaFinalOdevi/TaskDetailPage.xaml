@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GorselProgramlamaFinalOdevi.TaskDetailPage" Title="Görev Detay">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Entry x:Name="titleEntry" Placeholder="Başlık" />
+            <Editor x:Name="detailEditor" Placeholder="Detaylar" HeightRequest="100"/>
+            <DatePicker x:Name="datePicker" />
+            <TimePicker x:Name="timePicker" />
+
+            <Button Text="Kaydet" Clicked="OnSaveClicked" BackgroundColor="#6E557C" TextColor="White"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
